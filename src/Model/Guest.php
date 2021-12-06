@@ -12,7 +12,6 @@ class Guest
     public bool $isVegetarian = false;
     public string $phoneNumber;
 
-
     public function __construct(string $firstName = null,
                                 string $lastName = null,
                                 string $phoneNumber,
@@ -26,13 +25,6 @@ class Guest
         $this->phoneNumber = $phoneNumber;
     }
 
-    public function getGuestFirstName():string
-    {
-        return $this->firstName;
-    }
 
-    public function getDetailsEnteredDate($firstname)
-    {
-        return $this->replyDate;
-    }
+
 }
