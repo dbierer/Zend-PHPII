@@ -5,8 +5,6 @@ include 'GuestList.php';
 
 include_once 'Model/Guest.php';
 
-
-
 function input(string $prompt = null)
 {
     echo $prompt;
@@ -29,13 +27,13 @@ while ($halt === false)
                 input('Enter in first name'),
                 input('Enter in surname name'),
                 input('Enter in phone number'),
-                strtolower(input('Are they vegetration')) == 'yes'
+                strtolower(input('Are they vegetarian')) == 'yes'
             );
             array_push($guests,$newGuest);
             break;
         case 'S':
             foreach ($guests as $guest){
-                echo "$guest->firstName $guest->lastName  $guest->isVegetratian \n";
+                 echo "$guest->firstName $guest->lastName  $guest->isVegetarian \n";
             }
             break;
     }

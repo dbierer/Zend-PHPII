@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-class Guest
+class addGuest
 {
     public ?string $firstName;
     public ?string $lastName;
